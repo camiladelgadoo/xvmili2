@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis 15 Mili</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Mis 15 Mili</a>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="#invitation">Invitación</a></li>
+                        <li><a href="#details">Detalles</a></li>
+                        <li><a href="#gifts">Regalos</a></li>
+                        <li><a href="#rsvp">Asistencia</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#invitation" class="mobile-link">Invitación</a></li>
+                <li><a href="#details" class="mobile-link">Detalles</a></li>
+                <li><a href="#gifts" class="mobile-link">Regalos</a></li>
+                <li><a href="#rsvp" class="mobile-link">Asistencia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="bamboo-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-card">
+                <div class="hero-info">
+                    <h1>Mis Quince Años</h1>
+                    <h2>Milagros</h2>
+                    <p class="quote">"Te invito a celebrar conmigo"</p>
+                </div>
+
+                <div class="hero-date">
+                    <p class="event-date-display">11 de Setiembre de 2026</p>
+                </div>
+
+                <div class="countdown-container">
+                    <h3>Cuenta Regresiva</h3>
+                    <div class="countdown">
+                        <div class="countdown-item">
+                            <div class="countdown-value" id="days">00</div>
+                            <span>Días</span>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-value" id="hours">00</div>
+                            <span>Horas</span>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-value" id="minutes">00</div>
+                            <span>Minutos</span>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-value" id="seconds">00</div>
+                            <span>Segundos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="invitation" class="invitation">
+        <div class="container">
+            <!-- <h2 class="section-title">La Invitación</h2> -->
+            <div class="invitation-wrapper">
+                <div class="invitation-card">
+                    <div class="bamboo-decoration left"></div>
+                    <div class="bamboo-decoration right"></div>
+
+                    <div class="invitation-header">
+                        <div class="invitation-decoration left"></div>
+                        <div class="invitation-title">
+                            <h3>Mis Quince Años</h3>
+                        </div>
+                        <div class="invitation-decoration right"></div>
+                    </div>
+
+                    <div class="invitation-content">
+                        <p class="invitation-message">Quiero que compartas conmigo y mi familia la celebración de mis
+                            quince años</p>
+                        <p class="invitation-name">Milagros</p>
+
+                        <div class="invitation-divider">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+
+
+
+                        <div class="invitation-footer">
+                            <p>¡Te espero para disfrutar juntos este momento tan especial!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="details" class="details">
+        <div class="container">
+            <h2 class="section-title">Detalles del Evento</h2>
+
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h3>Ubicación</h3>
+                        <p><b>"Salon El Dorado"</b> <br> Av. José Belloni 3283</p>
+                        <a class="vinculo" target="_blank" href="https://maps.app.goo.gl/3y2EZMe3FhjQu7QS9"><button
+                            class="submit-btn">VER MAPA</button></a>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <div class="icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h3>Horario</h3>
+                        <p>22:00 hrs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dress-code">
+                <h3>Código de Vestimenta</h3>
+                <p>Formal - Elegante</p>
+
+                <!-- <div class="no-green-warning">
+                    <div class="bamboo-icon">
+                        <i class="fas fa-ban overlay-icon"></i>
+                        <img src="vestido.png" class="custom-dress-icon" alt="Vestido">
+
+                    </div>
+                    <div class="no-green-text">
+                        <h4>¡Importante!</h4>
+                        <p>Vestite elegante, pero no uses nada VERDE</p>
+                    </div>
+                </div>  -->
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="gifts" class="gifts">
+        <div class="container">
+            <h2 class="section-title">¿Querés regalarme algo?</h2>
+            <div class="gifts-content">
+                <div class="gift-options">
+                    <div class="gift-card">
+                        <div class="icon">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <h3>Transferencia Bancaria</h3>
+                        <p>COLECTIVO ABITAB 143322</p>
+                        <p>Brou CA $ 110607046-00001</p>
+                        <p>Brou CA US$ 110607046-00002</p>
+                        <p>Destinatario VIVIANA DELGADO</p>
+                    
+                    </div>
+                </div>
+                <div class="gift-message">
+                    <p>Lo que más valoro es que compartas este día conmigo</p>
+                </div>
+            </div>
+        </div>
+    </section>--> 
+
+    <section id="rsvp" class="rsvp">
+        <div class="container">
+            <h2 class="section-title">Confirma tu Asistencia</h2>
+            <p class="rsvp-info">Por favor confirma tu asistencia a este WhatsApp</p>
+             <br><p class="rsvp-info"> ANTES DEL 15 DE AGOSTO</p> <br>
+            <a class="vinculo" target="_blank" href="https://wa.me/59894214262"><button
+                class="submit-btn">CONFIRMAR PRESENCIA</button></a>
+            
+                <form id="rsvpForm" action="https://los15degiu.ajroit-wa.workers.dev/submit" method="POST">
+                    <!-- <div class="form-group">
+                        <label for="first_name">Nombre</label>
+                        <input type="text" id="first_name" name="first_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last_name">Apellido</label>
+                        <input type="text" id="last_name" name="last_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Venís a la fiesta?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="yes" name="attendance" value="yes" checked>
+                                <label for="yes">Sí, asistiré</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="no" name="attendance" value="no">
+                                <label for="no">No podré asistir</label>
+                            </div>
+                        </div>
+                    </div>
+
+                  
+                    <div class="form-group" id="guestsGroup" style="display: block;">
+                        <label for="guests">Número de invitados (incluyéndote)</label>
+                    
+                        <input type="number" id="guests" name="guests" min="1" max="5" value="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="menu">Menú</label>
+                        <select id="menu" name="menu" required>
+                            <option value="normal">🍽️ Normal - Menú tradicional</option>
+                            <option value="vegetariano">🥗 Vegetariano - Sin productos animales</option>
+                            <option value="sinTacc">🌾 Sin TACC - Libre de gluten</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Si querés dejarme un mensaje, podés hacerlo acá:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Confirmar Asistencia</button>
+                </form> -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2>Mili</h2>
+                <p>Mis Quince Años</p>
+                <div class="heart-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+
+           <!-- <div class="social-links">
+                <a href="https://www.instagram.com/ferra.giu/" class="social-link"><i
+                        class="fab fa-instagram"></i></a>
+            </div> -->
+
+            <div class="footer-info">
+                <p>11 de Setiembre de 2026</p>
+                <p>Con amor, Mili.</p>
+                <p class="copyright">© <span id="currentYear"></span> - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <div class="toast-title">¡Confirmación recibida!</div>
+            <div class="toast-message">Gracias por confirmar tu asistencia.</div>
+        </div>
+        <button class="toast-close" id="toastClose">×</button>
+    </div>
+
+    <!-- Mariposa Animada -->
+    <a href="https://abogadosensalud.github.io/corriendoalos15/" target="_blank"><div id="butterfly" class="butterfly"></div></a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
